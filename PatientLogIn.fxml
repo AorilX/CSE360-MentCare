@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.text.Font?>
+
+
+<AnchorPane prefHeight="246.0" prefWidth="362.0" xmlns:fx="http://javafx.com/fxml/1" xmlns="http://javafx.com/javafx/17" fx:controller="application.PatientLoginController">
+   <children>
+      <AnchorPane layoutX="-14.0" prefHeight="250.0" prefWidth="468.0">
+         <children>
+            <Label layoutX="84.0" layoutY="27.0" prefHeight="38.0" prefWidth="300.0" text="Welcom to the Patient Portal">
+               <font>
+                  <Font size="23.0" />
+               </font>
+            </Label>
+            <Button layoutX="182.0" layoutY="125.0" mnemonicParsing="false" onAction="#patientLogin" prefHeight="38.0" prefWidth="104.0" text="Log in" />
+            <Button layoutX="182.0" layoutY="178.0" mnemonicParsing="false" onAction="#patientSignup" prefHeight="38.0" prefWidth="104.0" text="Sign up" />
+         </children>
+      </AnchorPane>
+   </children>
+</AnchorPane>
+

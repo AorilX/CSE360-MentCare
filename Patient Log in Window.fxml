@@ -1,0 +1,39 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.text.Font?>
+
+
+<AnchorPane prefHeight="256.0" prefWidth="475.0" xmlns:fx="http://javafx.com/fxml/1" xmlns="http://javafx.com/javafx/17" fx:controller="application.PatientLoginController">
+   <children>
+      <AnchorPane layoutX="-108.0" layoutY="-198.0" prefHeight="200.0" prefWidth="200.0" />
+      <Label layoutX="164.0" layoutY="24.0" prefHeight="38.0" prefWidth="142.0" text="Patient Log in">
+         <font>
+            <Font size="22.0" />
+         </font>
+      </Label>
+      <Label layoutX="90.0" layoutY="72.0" text="First Name:">
+         <font>
+            <Font size="14.0" />
+         </font>
+      </Label>
+      <TextField layoutX="236.0" layoutY="69.0" />
+      <TextField layoutX="236.0" layoutY="112.0" />
+      <Label layoutX="91.0" layoutY="115.0" text="Last Name:">
+         <font>
+            <Font size="14.0" />
+         </font>
+      </Label>
+      <Label layoutX="90.0" layoutY="152.0" text="DOB(DD/MM/YYYY):">
+         <font>
+            <Font size="14.0" />
+         </font>
+      </Label>
+      <TextField layoutX="236.0" layoutY="149.0" />
+      <Button layoutX="129.0" layoutY="193.0" mnemonicParsing="false" onAction="#patientLoginOK" prefHeight="38.0" prefWidth="70.0" text="OK" />
+      <Button layoutX="272.0" layoutY="193.0" mnemonicParsing="false" prefHeight="38.0" prefWidth="77.0" text="Cancel" />
+   </children>
+</AnchorPane>
