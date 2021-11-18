@@ -1,0 +1,61 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.*?>
+<?import java.lang.*?>
+<?import javafx.scene.layout.*?>
+
+<VBox maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="762.0" prefWidth="1017.0" xmlns="http://javafx.com/javafx/8" xmlns:fx="http://javafx.com/fxml/1">
+   <children>
+      <MenuBar>
+        <menus>
+          <Menu mnemonicParsing="false" text="File">
+            <items>
+              <MenuItem mnemonicParsing="false" text="Close" />
+            </items>
+          </Menu>
+          <Menu mnemonicParsing="false" text="Edit">
+            <items>
+              <MenuItem mnemonicParsing="false" text="Delete" />
+            </items>
+          </Menu>
+          <Menu mnemonicParsing="false" text="Help">
+            <items>
+              <MenuItem mnemonicParsing="false" text="About" />
+            </items>
+          </Menu>
+        </menus>
+      </MenuBar>
+      <HBox prefHeight="736.0" prefWidth="1017.0">
+         <children>
+            <VBox prefHeight="733.0" prefWidth="212.0">
+               <children>
+                  <BorderPane prefHeight="12.0" prefWidth="212.0">
+                     <bottom>
+                        <ListView fx:id="msgList" prefHeight="677.0" prefWidth="212.0" BorderPane.alignment="CENTER" />
+                     </bottom></BorderPane>
+                  <AnchorPane prefHeight="80.0" prefWidth="212.0">
+                     <children>
+                        <Button fx:id="deletemsgbutton" layoutX="14.0" layoutY="17.0" mnemonicParsing="false" onAction="#deleteMessage" text="Delete Message" />
+                        <Button fx:id="emailbutton" layoutX="144.0" layoutY="17.0" mnemonicParsing="false" onAction="#emailUser" text="Email" />
+                     </children>
+                  </AnchorPane>
+               </children>
+            </VBox>
+            <VBox prefHeight="661.0" prefWidth="803.0">
+               <children>
+                  <BorderPane prefHeight="12.0" prefWidth="200.0" />
+                  <TextArea fx:id="readMsgBox" editable="false" prefHeight="434.0" prefWidth="803.0" />
+                  <BorderPane prefHeight="12.0" prefWidth="803.0" />
+                  <TextArea fx:id="writeMsgBox" prefHeight="220.0" prefWidth="803.0" />
+                  <AnchorPane prefHeight="55.0" prefWidth="803.0">
+                     <children>
+                        <Button fx:id="replybutton" layoutX="681.0" layoutY="14.0" mnemonicParsing="false" onAction="#ReplyToMessage" text="Reply to Message" />
+                        <Button fx:id="newmsgbutton" layoutX="565.0" layoutY="14.0" mnemonicParsing="false" onAction="#newMessage" text="New Message" />
+                     </children>
+                  </AnchorPane>
+               </children>
+            </VBox>
+         </children>
+      </HBox>
+   </children>
+</VBox>

@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.*?>
+<?import java.lang.*?>
+<?import javafx.scene.layout.*?>
+
+<AnchorPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="534.0" prefWidth="519.0" xmlns="http://javafx.com/javafx/8" xmlns:fx="http://javafx.com/fxml/1">
+   <children>
+      <Label layoutX="140.0" layoutY="31.0" text="Allergies:" />
+      <Label layoutX="93.0" layoutY="118.0" text="Health Concerns:" />
+      <Label layoutX="62.0" layoutY="210.0" text="Previous Health Issues:" />
+      <Label layoutX="9.0" layoutY="377.0" text="Previous Medications Prescribed:" />
+      <Button layoutX="100.0" layoutY="473.0" mnemonicParsing="false" onAction="#submitInfo" prefHeight="27.0" prefWidth="103.0" text="OK" />
+      <Button layoutX="302.0" layoutY="473.0" mnemonicParsing="false" onAction="#closeWindow" prefHeight="27.0" prefWidth="103.0" text="Cancel" />
+      <Label layoutX="72.0" layoutY="292.0" text="Immunization History:" />
+      <TextArea fx:id="allergiesTxt" layoutX="204.0" layoutY="31.0" prefHeight="69.0" prefWidth="298.0" />
+      <TextArea fx:id="hlthCncnTxt" layoutX="204.0" layoutY="118.0" prefHeight="69.0" prefWidth="298.0" />
+      <TextArea fx:id="prevIssuesTxt" layoutX="204.0" layoutY="204.0" prefHeight="69.0" prefWidth="298.0" />
+      <TextArea fx:id="ImmunHisTxt" layoutX="204.0" layoutY="292.0" prefHeight="69.0" prefWidth="298.0" />
+      <TextArea fx:id="prevMedPresTxt" layoutX="204.0" layoutY="377.0" prefHeight="69.0" prefWidth="298.0" />
+   </children>
+</AnchorPane>

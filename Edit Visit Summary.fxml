@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.*?>
+<?import java.lang.*?>
+<?import javafx.scene.layout.*?>
+
+<AnchorPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="383.0" prefWidth="474.0" xmlns="http://javafx.com/javafx/8" xmlns:fx="http://javafx.com/fxml/1">
+   <children>
+      <TextField fx:id="txtBox" layoutX="14.0" layoutY="14.0" prefHeight="309.0" prefWidth="445.0" />
+      <Button fx:id="okbutton" layoutX="124.0" layoutY="335.0" mnemonicParsing="false" onAction="#Submit" prefHeight="27.0" prefWidth="103.0" text="OK" />
+      <Button fx:id="cancelbutton" layoutX="250.0" layoutY="335.0" mnemonicParsing="false" onAction="#closeWindow" prefHeight="27.0" prefWidth="103.0" text="Cancel" />
+   </children>
+</AnchorPane>

@@ -1,0 +1,39 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.geometry.Insets?>
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.ButtonBar?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.layout.HBox?>
+<?import javafx.scene.layout.VBox?>
+
+<AnchorPane xmlns="http://javafx.com/javafx/17" xmlns:fx="http://javafx.com/fxml/1" fx:controller="application.AddPatientController">
+   <children>
+      <VBox prefHeight="100.0" prefWidth="447.0">
+         <children>
+            <HBox prefHeight="100.0" prefWidth="200.0" spacing="10.0">
+               <children>
+                  <Label text="Patient Name" />
+                  <TextField fx:id="patientName" />
+                  <Label text="DOB" />
+                  <TextField fx:id="dob" />
+               </children>
+               <padding>
+                  <Insets left="10.0" right="10.0" top="10.0" />
+               </padding>
+            </HBox>
+            <ButtonBar prefHeight="40.0" prefWidth="200.0">
+              <buttons>
+                <Button mnemonicParsing="false" onAction="#saveInfo" text="Okay" />
+                  <Button fx:id="exitButton" mnemonicParsing="false" onAction="#exitWin" text="Cancel" />
+              </buttons>
+               <padding>
+                  <Insets bottom="10.0" right="142.0" />
+               </padding>
+            </ButtonBar>
+         </children>
+      </VBox>
+   </children>
+</AnchorPane>

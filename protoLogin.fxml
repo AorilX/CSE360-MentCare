@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.geometry.Insets?>
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.layout.HBox?>
+
+
+<AnchorPane xmlns:fx="http://javafx.com/fxml/1" xmlns="http://javafx.com/javafx/17" fx:controller="application.protoLoginController">
+   <children>
+      <HBox alignment="CENTER" prefHeight="100.0" prefWidth="220.0" spacing="10.0">
+         <children>
+            <Button mnemonicParsing="false" onAction="#openPatient" text="Patient" />
+            <Button mnemonicParsing="false" onAction="#openDoctor" text="Doctor" />
+            <Button mnemonicParsing="false" onAction="#openNurse" text="Nurse" />
+         </children>
+         <padding>
+            <Insets bottom="20.0" left="20.0" right="20.0" top="20.0" />
+         </padding>
+      </HBox>
+   </children>
+</AnchorPane>
